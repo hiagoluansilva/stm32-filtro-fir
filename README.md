@@ -1,24 +1,43 @@
-🇧🇷 Português | 🇺🇸 [English](#english)
+# STM32 Filtro FIR — Filtro de Resposta ao Impulso Finita
 
-# stm32-filtro-fir
-
-Filtro FIR passa-baixa com CMSIS-DSP (`arm_fir_f32`) no STM32F446RE.
-
-## IDE
-
-Atollic TrueSTUDIO 9.3 / STM32CubeIDE
-Centro Tecnológico Liberato — Novo Hamburgo/RS
+🇧🇷 **Português** | 🇺🇸 [English](#english)
 
 ---
 
-<a name="english"></a>
-🇧🇷 [Português](#) | 🇺🇸 English
+## Português
 
-# stm32-filtro-fir
+Implementação de filtro FIR (Finite Impulse Response) em STM32F4xx, projetado para filtragem de sinais em tempo real via ADC/DAC.
 
-FIR low-pass filter using CMSIS-DSP (`arm_fir_f32`) on STM32F446RE.
+### O que faz
+- Implementa filtro **FIR** para seleção de frequências no sinal de entrada
+- Coeficientes definidos em tempo de compilação
+- Pipeline: ADC → FIR → DAC
+- Usa **CMSIS-DSP** ou implementação manual dos coeficientes
 
-## IDE
+### Conceito FIR
+```
+y[n] = Σ h[k] · x[n-k]   (k = 0..N-1)
+```
 
-Atollic TrueSTUDIO 9.3 / STM32CubeIDE
-Centro Tecnológico Liberato — Novo Hamburgo/RS, Brazil
+### Microcontrolador
+STM32F4xx — Atollic TrueSTUDIO
+
+---
+
+## English
+
+FIR (Finite Impulse Response) filter implementation on STM32F4xx, designed for real-time signal filtering via ADC/DAC.
+
+### What it does
+- Implements **FIR** filter for frequency selection on the input signal
+- Coefficients defined at compile time
+- Pipeline: ADC → FIR → DAC
+- Uses **CMSIS-DSP** or manual coefficient implementation
+
+### FIR concept
+```
+y[n] = Σ h[k] · x[n-k]   (k = 0..N-1)
+```
+
+### MCU
+STM32F4xx — Atollic TrueSTUDIO
