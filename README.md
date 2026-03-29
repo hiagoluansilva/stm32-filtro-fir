@@ -1,41 +1,24 @@
+🇧🇷 Português | 🇺🇸 [English](#english)
+
 # stm32-filtro-fir
 
-Filtro FIR passa-baixa implementado com a biblioteca CMSIS-DSP no STM32F446RE.
+Filtro FIR passa-baixa com CMSIS-DSP (`arm_fir_f32`) no STM32F446RE.
 
-## Descrição
+## IDE
 
-Implementação de filtro FIR (Finite Impulse Response) passa-baixa utilizando as funções otimizadas da ARM CMSIS-DSP Library, aproveitando as instruções SIMD do núcleo Cortex-M4 com FPU.
-
-## Hardware
-
-- Microcontrolador: STM32F446RE
-
-## Tecnologias
-
-- **CMSIS-DSP** — `arm_fir_f32`
-- Coeficientes calculados conforme teoria de projeto de filtros digitais (janela, equirripple, etc.)
-
-## Conceitos abordados
-
-- Teorema de Nyquist e taxa de amostragem
-- Projeto de filtros FIR por janelamento
-- DSP em tempo real com Cortex-M4
-
-## Estrutura do projeto
-
-```
-filtroCMSIS_FIRLP/
-├── Src/
-├── Inc/
-├── Drivers/    # CMSIS-DSP incluído
-└── STM32F446RE_FLASH.ld
-```
-
-## Referências
-
-- ARM CMSIS-DSP Library Documentation
-- Sedra — Microeletrônica (5ª ed.)
-
-## Escola
-
+Atollic TrueSTUDIO 9.3 / STM32CubeIDE
 Centro Tecnológico Liberato — Novo Hamburgo/RS
+
+---
+
+<a name="english"></a>
+🇧🇷 [Português](#) | 🇺🇸 English
+
+# stm32-filtro-fir
+
+FIR low-pass filter using CMSIS-DSP (`arm_fir_f32`) on STM32F446RE.
+
+## IDE
+
+Atollic TrueSTUDIO 9.3 / STM32CubeIDE
+Centro Tecnológico Liberato — Novo Hamburgo/RS, Brazil
